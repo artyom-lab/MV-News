@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mount Vernon News</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="page-navbar">
+    <div class="navbar-top d-none d-xl-block">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-6 text-center">
+            <a href="#!" class="navbar-brand p-0">
+              <img class="img-fluid logo" src="img/brand.png" alt="" width="200">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-bottom">
+      <div class="container container-1 navbar navbar-expand-xl">
+        <a href="#!" class="navbar-toggler-2 mr-3">
+          <span></span>
+        </a>
+        <div class="form-box d-none d-xl-inline-block">
+          <form class="form-inline form-find">
+            <input class="form-control input-find" type="text">
+            <span class="fas fa-search find"></span>
+          </form>
+        </div>
+        <a href="#!" class="img-header d-xl-none mx-auto">
+          <img src="img/brand.png" alt="" width="140">
+        </a>
+        <div class="header-links d-flex align-items-center mr-xl-auto">
+          <div class="navbar-collapse" id="navbar">
+            <ul class="navbar-nav navbar-nav-1 flex-xl-wrap">
+              <li class="nav-item">
+                <a class="nav-link" href="#!">NEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">OPINIONS</a>
+              </li>
+              <li class="nav-item">
+                <div class="nav-link dropdown dropdown-1">
+                  <a href="#!" class="dropdown-toggle" data-toggle="dropdown">MILESTONES</a>
+                  <div class="dropdown-menu">
+                    <a href="#!" class="dropdown-item">Anniversaries</a>
+                    <a href="#!" class="dropdown-item">Births</a>
+                    <a href="#!" class="dropdown-item">Obituaries</a>
+                    <a href="#!" class="dropdown-item">Weddings</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">SPECIAL SECTIONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">DIRECTORY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">SUBSCRIPTION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">E-EDITION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">
+                  <span class="fas fa-envelope"></span>
+                </a>
+              </li>
+              <li class="nav-item d-xl-none">
+                <form class="form-inline form-search-2 mt-3">
+                  <input class="form-control" type="text">
+                  <button class="fas fa-search"></button>
+                </form>
+              </li>
+              <button class="btn btn-contact text-uppercase mt-4 d-xl-none">Shoppers' Mart Hot Deals</button>
+            </ul>
+          </div>
+        </div>
+        <button class="btn btn-contact text-uppercase d-none d-xl-block">Shoppers' Mart Hot Deals</button>
+        <a href="#!" class="navbar-toggler ml-3">
+          <span></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <aside id="menu">
+    <div class="container">
+      <form>
+        <input class="form-control form-control-search" type="text" placeholder="Search">
+      </form>
+     <div class="row mt-4 pt-3">
+       <div class="col-sm-4 col-lg">
+         <div class="link-name">News</div>
+         <div class="links">
+            <a href="#!">Religion</a>
+            <a href="#!">Sports</a>
+            <a href="#!">Real Estate & Development</a>
+            <a href="#!">Community</a>
+            <a href="#!">Business</a>
+            <a href="#!">Education</a>
+            <a href="#!">Health & wellness</a>
+            <a href="#!">Crime & Courts</a>
+            <a href="#!">Politics</a>
+            <a href="#!">Press Release</a>
+            <a href="#!">Kids & Families</a>
+            <a href="#!">Automotive</a>
+            <a href="#!">Taking It to the Street</a>
+         </div>
+       </div>
+       <div class="col-sm-4 col-lg">
+         <div class="link-name">Opinions</div>
+         <div class="links">
+            <a href="#!">Letter to the Editor</a>
+            <a href="#!">Commentary</a>
+         </div>
+       </div>
+       <div class="col-sm-4 col-lg">
+         <div class="link-name">Milestones</div>
+         <div class="links">
+            <a href="#!">Obits</a>
+            <a href="#!">Weddings & Anniversaries</a>
+            <a href="#!">Births</a>
+         </div>
+       </div>
+       <div class="col-sm-4 col-lg">
+         <div class="link-name">Classifieds & Offers</div>
+         <div class="links">
+            <a href="#!">Help Wanted</a>
+            <a href="#!">Real Estate</a>
+            <a href="#!">Trading Post</a>
+            <a href="#!">Notices</a>
+            <a href="#!">Home Repair & Maintenance</a>
+            <a href="#!">Cars & Trucks</a>
+            <a href="#!">Home Remodeling & Additions</a>
+            <a href="#!">Lawn & Garden</a>
+            <a href="#!">Farmland & Farm</a>
+            <a href="#!">Services</a>
+            <a href="#!">Legal Notices</a>
+            <a href="#!">ATVs & UTVs</a>
+            <a href="#!">Milestones</a>
+            <a href="#!">Auctions</a>
+         </div>
+       </div>
+       <div class="col-sm-4 col-lg">
+         <div class="link-name">Special Sections</div>
+         <div class="links">
+            <a href="#!">Knox County Local Eats</a>
+            <a href="#!">Knox County Seniors</a>
+            <a href="#!">Your Energy</a>
+            <a href="#!">Knox County Fishing</a>
+         </div>
+       </div>
+       <div class="col-sm-4 col-lg">
+         <div class="link-name">Social</div>
+         <div class="links">
+            <a href="#!">Facebook</a>
+            <a href="#!">Twitter</a>
+         </div>
+         <div class="link-name">Fine Print</div>
+         <div class="links">
+            <a href="#!">About</a>
+            <a href="#!">Contact</a>
+            <a href="#!">Directory</a>
+            <a href="#!">Subscription</a>
+            <a href="#!">Pay your Invoice</a>
+            <a href="#!">e-Edition</a>
+            <a href="#!">Newsletter Sign-up</a>
+            <a href="#!">Privacy Policy</a>
+            <a href="#!">Terms of Service</a>
+         </div>
+       </div>
+     </div>
+    </div>
+  </aside>
+  <main class="mt-145 mb-4">
+    <div class="owl-1 owl-carousel owl-theme mb-4 mb-sm-5">
+      <img src="img/car1.jpg" alt="">
+      <img src="img/car2.jpg" alt="">
+      <img src="img/car3.jpg" alt="">
+      <img src="img/car4.jpg" alt="">
+      <img src="img/car5.jpg" alt="">
+    </div>
+    <div class="container container-1 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 d-none d-lg-block">
+          <div class="bb-1">
+            <a class="return return-2 align-middle" href="#!"><i class="fas fa-chevron-left align-middle"></i>Return to Homebuilders</a>
+          </div>
+            <div class="fz-13 font-weight-bold mt-3">Contact</div>
+            <div>
+              <a href="tel:(555) 987-4321" class="gray fz-13"><i class="fas fa-phone-alt mr-2"></i><span>(555) 987-4321</span></a> 
+            </div>           
+            <div>
+              <a href="mailto:sales@mountvernonnews.com" class="gray fz-13"><i class="fas fa-envelope mr-2"></i><span>contact@sbhomerenovatons.com</span></a>
+            </div>           
+            <div>
+              <a href="#!" class="gray fz-13"><i class="fas fa-globe mr-2"></i><span>click to website</span></a>
+            </div>
+            <button class="btn btn-contact btn-block my-3">Contact</button>
+            <div class="fz-13 font-weight-bold mt-3">Social</div>
+            <div>
+              <a href="#!" class="blue"><i class="fab fa-facebook-f mr-2"></i><span class="fz-13">Facebook</span></a> 
+            </div>
+            <div>
+              <a href="#!" class="blue2"><i class="fab fa-twitter mr-2"></i><span class="fz-13">Twitter</span></a> 
+            </div>
+            <div class="fz-13 font-weight-bold mt-3">Founded</div>
+            <div class="gray fz-13">1970</div>
+            <div class="fz-13 font-weight-bold mt-3">Founders</div>
+            <div class="gray fz-13">Frank Silverstein</div>
+            <div class="gray fz-13">Peter Brennen</div>
+            <div class="fz-13 font-weight-bold mt-3">Staff</div>
+            <div class="row gray fz-13">
+              <div class="col-4">
+                <div>President</div>
+                <div>CEO</div>
+                <div>Forman</div>
+                <div>Designer</div>
+                <div>Architect</div>
+              </div>
+              <div class="col-8">
+                <div>Peter Brennen</div>
+                <div>Frank Silverstein, Jr.</div>
+                <div>José Guzman</div>
+                <div>Julie Oswald</div>
+                <div>Christopher Sinclair</div>
+              </div>
+            </div>
+            <div class="fz-13 font-weight-bold mt-3">Communities Served</div>
+            <div class="gray fz-13">Greater Mount Vernon area</div>
+        </div>
+        <div class="col-12 col-lg-9">
+          <div class="row row-1 mb-4">
+            <div class="col-auto">
+              <img src="img/img-5.png" alt="" width="100">
+            </div>
+            <div class="col">
+              <h1>SB Home Renovations</h1>
+              <div class="fz-13">Homebuilders / Home Remodeling / Kitchens / Baths</div>
+              <div class="gray fz-13">1460 Washington St., Mount Vernon, OH 43050</div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col d-lg-none">
+              <div class="bb-1 d-inline-block">
+                <a class="return return-2 align-middle" href="#!"><i class="fas fa-chevron-left align-middle"></i>Return to Homebuilders</a>
+              </div>
+              <div class="row row-1 mt-4">
+                <div class="col-3">
+                  <div class="fz-13 font-weight-bold">Contact</div>
+                </div>
+                <div class="col-9">
+                  <div>
+                    <a href="tel:(555) 987-4321" class="gray fz-12"><i class="fas fa-phone-alt mr-2"></i><span>(555) 987-4321</span></a> 
+                  </div>           
+                  <div>
+                    <a href="mailto:sales@mountvernonnews.com" class="gray fz-12"><i class="fas fa-envelope mr-2"></i><span>contact@sbhomerenovatons.com</span></a>
+                  </div>           
+                  <div>
+                    <a href="#!" class="gray fz-12"><i class="fas fa-globe mr-2"></i><span>click to website</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-1">
+                <div class="col-sm-auto">
+                  <button class="btn btn-contact btn-block my-3">Contact</button>
+                </div>
+              </div>
+              <div class="row row-1 mt-4">
+                <div class="col-3">
+                  <div class="fz-13 font-weight-bold">Social</div>
+                </div>
+                <div class="col-9">
+                  <div>
+                    <a href="#!" class="blue"><i class="fab fa-facebook-f mr-2"></i><span class="fz-13">Facebook</span></a> 
+                  </div>
+                  <div>
+                    <a href="#!" class="blue2"><i class="fab fa-twitter mr-2"></i><span class="fz-13">Twitter</span></a> 
+                  </div>
+                </div>
+              </div>
+              <div class="row row-1 mt-4">
+                <div class="col-3">
+                  <div class="fz-13 font-weight-bold">Founded</div>
+                </div>
+                <div class="col-9">
+                  <div class="gray fz-13">1970</div>
+                </div>
+              </div>
+              <div class="row row-1 mt-4">
+                <div class="col-3">
+                  <div class="fz-13 font-weight-bold">Founders</div>
+                </div>
+                <div class="col-9">
+                  <div class="gray fz-13">Frank Silverstein</div>
+                  <div class="gray fz-13">Peter Brennen</div>
+                </div>
+              </div>
+              <div class="row row-1 mt-4">
+                <div class="col-3">
+                  <div class="fz-13 font-weight-bold">Staff</div>
+                </div>
+                <div class="col-9">
+                  <div class="row gray fz-13">
+                    <div class="col-4">
+                      <div>President</div>
+                      <div>CEO</div>
+                      <div>Forman</div>
+                      <div>Designer</div>
+                      <div>Architect</div>
+                    </div>
+                    <div class="col-8">
+                      <div>Peter Brennen</div>
+                      <div>Frank Silverstein, Jr.</div>
+                      <div>José Guzman</div>
+                      <div>Julie Oswald</div>
+                      <div>Christopher Sinclair</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-1 mt-4">
+                <div class="col-4 col-sm-3">
+                  <div class="fz-13 font-weight-bold">Communities Served</div>
+                </div>
+                <div class="col-8 col-sm-9">
+                  <div class="gray fz-13">Greater Mount Vernon area</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>About</h3>
+          <div class="georgia fz-15">
+            <p>Lorem ipsum dolor sit amet, nobis delenit salutandi eos id, ex mei nullam doctus, periculis vituperata ius ne. Eum nibh tractatos ad, cu eam sale sanctus pertinacia. Affert nemore apeirian cu sit, hinc nostrum voluptatum et duo. Pro te detracto explicari, pri omnium detraxit forensibus ne. Ad erat graece eum.</p>
+            <p>Has nobis tamquam imperdiet ne, vel meis lobortis eu, ne per prompta delectus. Suas laudem expetendis nam in, ex justo quaeque ius. Denique invenire eum at, ad graecis facilisis sadipscing mei, animal legendos petentium sed id. Erant ullamcorper vim in, quando fabellas ne vix. At pro harum aperiam. Adhuc laudem ponderum cu pro, an alii probatus maiestatis per. Nibh labores graecis at nec, id invidunt antiopam vel.</p>
+            <p>Quod agam, pri consul nostro aliquip id. Eum tale incorrupte ut, no pri menandri conclusionemque. No purto labores duo, mel paulo tantas eu. Ad autem quidam eligendi sea, ut cum vidit habeo erroribus. Cu has impetus pertinacia, soleat constituam disputando ei eum. Pri no nisl mutat. Ea pro duis liber tempor, eirmod invidunt pericula his te.</p>
+          </div>
+          <h3 class="pt-3">Services</h3>
+          <div class="row">
+            <div class="col-sm-6 col-xl-3">
+              <div class="font-weight-bold pb-1"><span class="gray">&#8226;</span> <a href="#!" class="red">General Remodeling</a></div>
+              <div class="font-weight-bold pb-1"><span class="gray">&#8226;</span> <a href="#!" class="red">Additions</a></div>
+              <div class="font-weight-bold pb-1"><span class="gray">&#8226;</span> <a href="#!" class="red">Kitchen Remodeling</a></div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+              <div class="font-weight-bold pb-1"><span class="gray">&#8226;</span> <a href="#!" class="red">Bath Remodeling</a></div>
+              <div class="font-weight-bold pb-1"><span class="gray">&#8226;</span> <a href="#!" class="red">Design Services</a></div>
+              <div class="font-weight-bold pb-1"><span class="gray">&#8226;</span> <a href="#!" class="red">Architectural Services</a></div>
+            </div>
+          </div>
+          <h3 class="pt-3">Recent News</h3>
+          <div class="bb-2 pb-4">
+            <div class="row row-1">
+              <div class="col-5 col-sm-4">  
+                <div class="img-wrap">
+                  <div class="bg-img bg-wrap embed-responsive embed-responsive-4by3" style="background-image: url(img/car4.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="col-7 col-sm-8 mb-xl-5 mt-2 mt-md-0">
+                <div class="fz-21 fw-900"><a href="#!">SB Home Renovations brings 50 years of renovation experience to Mount Vernon homeowners</a></div>
+                <div class="merriweather fz-12 my-2">Oct 7, 2020</div>
+                <div class="georgia d-none d-md-block">Homeowners should be preparing their homes for winter now before the weather gets colder, because there are exterior and interior items that need to be checked.</div>
+              </div>
+            </div>
+          </div>
+          <div class="bb-2 py-4">
+            <div class="row row-1">
+              <div class="col-5 col-sm-4">  
+                <div class="img-wrap">
+                  <div class="bg-img bg-wrap embed-responsive embed-responsive-4by3" style="background-image: url(img/car4.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="col-7 col-sm-8 mb-xl-5 mt-2 mt-md-0">
+                <div class="fz-21 fw-900"><a href="#!">SB Home Renovations brings 50 years of renovation experience to Mount Vernon homeowners</a></div>
+                <div class="merriweather fz-12 my-2">Oct 7, 2020</div>
+                <div class="georgia d-none d-md-block">Homeowners should be preparing their homes for winter now before the weather gets colder, because there are exterior and interior items that need to be checked.</div>
+              </div>
+            </div>
+          </div>
+          <div class="bb-2 py-4">
+            <div class="row row-1">
+              <div class="col-5 col-sm-4">  
+                <div class="img-wrap">
+                  <div class="bg-img bg-wrap embed-responsive embed-responsive-4by3" style="background-image: url(img/car4.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="col-7 col-sm-8 mb-xl-5 mt-2 mt-md-0">
+                <div class="fz-21 fw-900"><a href="#!">SB Home Renovations brings 50 years of renovation experience to Mount Vernon homeowners</a></div>
+                <div class="merriweather fz-12 my-2">Oct 7, 2020</div>
+                <div class="georgia d-none d-md-block">Homeowners should be preparing their homes for winter now before the weather gets colder, because there are exterior and interior items that need to be checked.</div>
+              </div>
+            </div>
+          </div>
+          <div class="py-4">
+            <div class="row row-1">
+              <div class="col-5 col-sm-4">  
+                <div class="img-wrap">
+                  <div class="bg-img bg-wrap embed-responsive embed-responsive-4by3" style="background-image: url(img/car4.jpg)">
+                  </div>
+                </div>
+              </div>
+              <div class="col-7 col-sm-8 mb-xl-5 mt-2 mt-md-0">
+                <div class="fz-21 fw-900"><a href="#!">SB Home Renovations brings 50 years of renovation experience to Mount Vernon homeowners</a></div>
+                <div class="merriweather fz-12 my-2">Oct 7, 2020</div>
+                <div class="georgia d-none d-md-block">Homeowners should be preparing their homes for winter now before the weather gets colder, because there are exterior and interior items that need to be checked.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row text-center text-xl-left mb-5">
+        <div class="col-md-3 col-xl-3 mb-4 mb-xl-0">
+          <a href="#!" class="brand">Mount Vernon News</a>
+          <div class="mt-2">
+            <a href="#!" class="social fab fa-facebook-f"></a>
+            <a href="#!" class="social fab fa-twitter"></a>
+          </div>
+        </div>
+        <div class="col-md-3 col-xl-2 mb-4 mb-xl-0 footer-links">
+          <h5 class="mt-1 mb-3">News</h5>
+          <div>
+            <a href="#!">Religion</a>
+          </div>
+          <div>
+            <a href="#!">Help Wanted</a>
+          </div>     
+          <div>
+            <a href="#!">Real Estate</a>
+          </div>   
+          <div>
+            <a href="#!">Trading Post</a>
+          </div>    
+          <div>
+            <a href="#!">Notices</a>
+          </div>   
+          <div>
+            <a href="#!">Home Repair & Maintenance</a>
+          </div>   
+          <div>
+            <a href="#!">Sports</a>
+          </div>   
+          <div>
+            <a href="#!">Real Estate & Development</a>
+          </div>   
+          <div>
+            <a href="#!">Community</a>
+          </div>   
+          <div>
+            <a href="#!">Cars & Trucks</a>
+          </div>  
+        </div>
+        <div class="col-md-3 col-xl-2 mb-4 mb-xl-0 footer-links">
+          <h5 class="mt-1 mb-3">Marketing</h5>
+          <div>
+            <a href="#!">RSS</a>
+          </div> 
+        </div>
+        <div class="col-md-3 col-xl-2 mb-4 mb-xl-0 footer-links">
+          <h5 class="mt-1 mb-3">More Info</h5>
+          <div>
+            <a href="#!">About</a>
+          </div>
+          <div>
+            <a href="#!">Contact</a>
+          </div>  
+          <div>
+            <a href="#!">Directory</a>
+          </div>      
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row text-center">
+          <div class="col-sm mb-2 mb-sm-0 text-sm-left">© 2023 Mount Vernon News. All rights reserved.</div>
+          <div class="col-sm text-sm-right">
+            <a href="#!">Privacy Policy</a>
+            <span>|</span>
+            <a href="#!">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
+

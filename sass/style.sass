@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap')
+
+@font-face
+	font-family: 'Georgia'
+	src: url('../fonts/Georgia.ttf')
+	font-weight: normal
+
+$transition: .3s
+
+$color-black: #000
+$color-white: #FFF
+$color-border: #ebebeb
+$color-gray: #f2f5f8
+$color-red: #ae2028
+$color-footer: #4b4b4b
+$color-h: #303030
+
+.georgia 
+	font-family: 'Georgia', sans-serif
+.merriweather 
+	font-family: 'Merriweather', sans-serif
+
+.gray 
+	color: #a2a2a2
+.blue 
+	color: #3b5998
+.blue2
+	color: #00acee
+.red
+	color: $color-red
+
+.a-red
+	color: $color-red
+	font-weight: bold
+	&:hover 
+		color: $color-red
+
+*
+	outline: none !important
+
+img 
+	max-width: 100%
+	height: auto
+
+body 
+	font-family: 'Roboto', sans-serif
+	background-color: $color-white
+	display: flex
+	color: $color-black
+	flex-direction: column
+	min-height: 100vh
+
+a 
+	text-decoration: none !important
+	transition: $transition
+	color: $color-black
+	&:hover 
+		color: initial
+		opacity: .6
+
+@media (min-width: 1200px)
+	.container 
+		max-width: 1200px
+
+@media (max-width: 1199.98px)
+	.container-1
+		max-width: 100%
+		padding-left: 20px 
+		padding-right: 20px
+
+.row-1
+	margin-left: -8px
+	margin-right: -8px
+	> [class*='col']
+		padding-left: 8px
+		padding-right: 8px
+.row-2
+	margin-left: -4px
+	margin-right: -4px
+	> [class*='col']
+		padding-left: 4px
+		padding-right: 4px
+
+.h1, h1 
+	font-size: 36px
+	font-weight: 900
+	color: $color-h
+	@media (max-width: 575.98px)
+		font-size: 29px
+
+.h1
+	font-size: 40px
+	font-weight: 700
+
+.h2, h2 
+	font-size: 27px
+	font-weight: 900
+	color: $color-h
+	@media (max-width: 575.98px)
+		font-size: 26px
+
+.h3, h3 
+	font-size: 18px
+	font-weight: 900
+	color: $color-h
+
+.h4, h4 
+	font-size: 24px
+	font-weight: 900
+	color: $color-h
+
+.h5, h5 
+	font-size: 14px
+	font-weight: bold
+	color: $color-h
+
+.h6, h6 
+	font-size: 14px
+	font-weight: bold
+	font-family: 'Merriweather', sans-serif
+	color: $color-h
+	text-transform: uppercase
+
+.fz-21
+	font-size: 21px
+	@media (max-width: 575.98px)
+		font-size: 12px
+.fz-20
+	font-size: 20px
+.fz-15
+	font-size: 15px
+.fz-14
+	font-size: 14px
+.fz-13
+	font-size: 13px
+.fz-12
+	font-size: 12px
+
+.fw-900
+	font-weight: 900
+
+.lh-1
+	line-height: 1
+
+.bb-1 
+	border-bottom: 2px solid $color-black
+.bb-1a 
+	border-bottom: 2px solid $color-black
+	@media (max-width: 767.98px)
+		border: 0
+.bb-2
+	border-bottom: 1px solid $color-border
+.bb-2a
+	border-bottom: 1px solid $color-border
+	@media (max-width: 767.98px)
+		border: 0
+
+.page-navbar
+	padding-top: 0px
+	padding-bottom: 0px
+	background: $color-white
+	text-transform: uppercase
+	font-size: 14px
+	font-family: "Roboto", sans-serif
+	right: 0
+	left: 0
+	position: absolute
+	top: -99px
+	margin-top: 99px
+	z-index: 1002
+	.navbar-top
+		padding: 16px
+		.navbar-brand
+			&:hover 
+				opacity: .6
+	.navbar-bottom
+		padding: 4px 16px 
+		border-bottom: 2px solid $color-gray
+		@media (max-width: 1199.98px)
+			padding: 4px 0
+		.navbar-nav-1
+			.nav-item
+				.nav-link
+					padding: 4px 18px
+					display: inline-block
+					transition: $transition
+					color: $color-black
+					font-weight: bold
+					@media (max-width: 1199.98px)
+						padding: 8px 0
+					&:hover 
+						opacity: .6
+		.header-links
+			white-space: nowrap
+		.btn-contact
+			@media (max-width: 1199.98px)
+				font-size: 10px 
+				padding: 11px 6px
+	&.fixed-top
+		position: fixed
+		top: 0
+		margin-top: 0
+		transition: top .5s
+		.navbar-top
+			display: none !important
+		.navbar-bottom 
+			.header-links, .search, .btn-contact, .form-box
+				display: none !important
+			.img-header 
+				display: block !important
+		+ #menu 
+			top: 58px
+
+.navbar-toggler
+	display: inline-block
+	color: $color-black
+	cursor: pointer
+	transition: none
+	padding: 0
+	border: 0
+	background-color: $color-white
+	transform: rotate(180deg)
+	&:hover 
+		opacity: .6
+	&:before
+		width: 10px
+	span
+		width: 18px
+	&:after
+		width: 25px
+	&:before, &:after
+		content: ''
+	span, &:after
+		margin-top: 8px
+	span, &:before, &:after
+		display: block
+		transition: $transition
+		transform-origin: right center
+		border-top: 1px solid $color-black
+	&:hover 
+		opacity: .8
+	.fixed-top &
+		display: none
+
+.navbar-toggler-2
+	display: inline-block
+	cursor: pointer
+	transition: none
+	padding: 0
+	border: 0
+	&:hover 
+		opacity: .6
+	&:before
+		width: 25px
+	span
+		width: 25px
+	&:after
+		width: 25px
+	&:before, &:after
+		content: ''
+	span, &:after
+		margin-top: 8px
+	span, &:before, &:after
+		display: block
+		transition: $transition
+		transform-origin: right center
+		border-top: 1px solid $color-black
+		margin-left: auto
+	&.active
+		&:before
+			transform: rotate(-45deg)
+			width: 25px
+		span
+			width: 0
+			opacity: 0
+		&:after
+			transform: rotate(45deg)
+			width: 25px
+	.fixed-top &
+		display: none
+
+@media (max-width: 1199.98px)
+	.page-navbar 
+		transition: $transition
+		#navbar 
+			position: fixed
+			width: 200px
+			right: -200px
+			top: 0
+			bottom: 0
+			overflow: auto
+			min-height: 100vh
+			padding: 40px 15px
+			background: $color-gray
+
+@media (max-width: 1199.98px)
+	.menubar-in
+		overflow: hidden
+		&:before 
+			content: ''
+			position: fixed
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			z-index: 9
+		.page-navbar
+			transform: translateX(-200px)
+
+.form-search-2
+	position: relative
+	transition: $transition
+	.form-control 
+		padding: 0 20px 0 30px
+		width: 100%
+		height: 30px
+		border: 0
+		border-radius: 100px
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: bold
+		&:focus 
+			box-shadow: none
+	.fas 
+		transition: $transition
+		position: absolute
+		background: none
+		border: none
+		top: 50%
+		left: 8px
+		transform: translateY(-50%)
+		padding: 0
+
+.form-box
+	position: relative
+	width: 24px
+	height: 24px
+	z-index: 1003
+	.form-find
+		width: 200px
+		height: 24px
+		position: absolute
+		top: 0
+		left: 0
+		.find
+			transition: $transition
+			position: absolute
+			border: none
+			border-radius: 0
+			padding: 0
+			cursor: pointer
+			text-align: center
+			color: $color-black
+			background: $color-white
+			top: 0px
+			left: 0px
+			bottom: 0px
+			line-height: 24px
+			width: 24px	
+			font-size: 14px
+		.input-find
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			border-radius: 0
+			transition: $transition
+			height: 24px
+			padding: 0 
+			width: 24px
+			box-shadow: none !important
+			border: 0
+			@media (max-width: 1199.98px)
+				width: 100%
+				padding: 2px 10px 2px 24px
+		&.open
+			.find
+				background: $color-gray
+			.input-find
+				width: 100%
+				padding: 2px 10px 2px 24px
+				background: $color-gray
+
+.dropdown-1
+	&:hover 
+		opacity: 1 !important
+	.dropdown-toggle
+		&:after
+			display: none
+	.dropdown-menu
+		margin-top: 0
+		top: 147%
+		left: 20px
+		border-radius: 2px
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1)
+		border: 0
+		text-transform: capitalize
+		@media (max-width: 1199.98px)
+			margin-top: 10px
+		.dropdown-item
+			font-size: 14px
+			font-weight: bold
+			padding: 4px 16px
+			&:hover 
+				opacity: 1
+			&:active 
+				color: $color-black
+				background: #f8f9fa
+
+.mt-200
+	margin-top: 220px
+	@media (max-width: 1199.98px)
+		margin-top: 100px
+
+.mt-145
+	margin-top: 145px
+	@media (max-width: 1199.98px)
+		margin-top: 66px
+
+@media (min-width: 1200px)
+	.w-300 
+		width: 300px
+
+.return 
+	font-size: 11px
+	display: inline-block
+	.fa-chevron-left
+		font-size: 10px
+		margin-right: 4px
+		margin-bottom: 2px
+	&:hover 
+		transform: translateX(-4px)
+
+.return-2
+	font-size: 13px
+	font-weight: bold
+
+.directory-links
+	font-size: 13px
+	padding: 8px 
+	transition: $transition
+	border-radius: 6px
+	&:hover 
+		background: $color-gray
+		font-weight: bold 
+		opacity: 1
+
+.directory-links-2
+	@media (max-width: 767.98px)
+		text-transform: uppercase
+		border: 1px solid $color-gray
+
+.contacts
+	padding-left: 18px
+	font-family: 'Georgia', sans-serif
+	font-size: 15px
+
+.bg-img 
+	background-size: cover
+	background-position: center center
+	height: 100%
+	@media (max-width: 1199.98px)
+		min-height: 184px
+	@media (max-width: 575.98px)
+		min-height: 110px
+
+.pagination 
+	.page-link 
+		color: $color-red
+		font-size: 14px
+		font-weight: bold
+		&:hover 
+			background: $color-red
+			color: $color-white
+			opacity: 1
+		&:focus 
+			box-shadow: none
+		@media (max-width: 991.98px)
+			font-size: 12px
+
+.owl-carousel
+	&.owl-theme
+		.owl-dots
+			display: none !important
+
+.btn-contact
+	font-size: 14px
+	padding: 7px 10px
+	border-radius: 4px
+	background: $color-red
+	border: 0
+	color: $color-white
+	font-weight: bold
+	transition: $transition
+	&:hover 
+		color: $color-white
+		opacity: .8
+	&:focus
+		box-shadow: none
+
+.categories 
+	background: $color-white
+	@media (min-width: 768px)
+		position: static
+		opacity: 1 !important
+		display: block
+		height: auto
+		.modal-dialog
+			transform: none !important
+	@media (max-width: 767.98px)
+		padding: 17px !important
+	.modal-dialog 
+		margin: 0 
+		border: 0 !important
+		max-width: 100%
+
+.btn-category
+	font-size: 18px
+	padding: 8px 16px
+	transition: $transition
+	border-radius: 6px	
+	background: $color-gray
+
+.btn-close
+	display: inline-block
+	cursor: pointer
+	transition: none
+	padding: 0
+	border: 0
+	margin-right: 16px
+	&:hover 
+		opacity: .6
+	&:before
+		width: 25px
+		transform: rotate(-45deg)
+	span
+		width: 0
+		opacity: 0
+	&:after
+		width: 25px
+		transform: rotate(45deg)
+	&:before, &:after
+		content: ''
+	span, &:after
+		margin-top: 8px
+	span, &:before, &:after
+		display: block
+		transition: $transition
+		transform-origin: right center
+		border-top: 1px solid $color-black
+		margin-left: auto
+
+input
+	&[type=radio]
+		display: none
+
+.radio-group	
+	font-size: 13px
+	display: block
+	text-align: center
+	cursor: pointer
+	input
+		~ div
+			padding: 8px
+			border-radius: 6px
+			border: 0
+			color: $color-black
+			@media (max-width: 767.98px)
+				text-transform: uppercase
+				border: 1px solid $color-gray
+		&:hover, &:checked
+			~ div
+				transition: $transition
+				background: $color-gray
+				font-weight: bold 
+
+.tabs-search
+	font-size: 13px
+	border: 0
+	text-align: center
+	justify-content: center
+	.nav-link
+		border: 0
+		color: $color-black
+		border-radius: 6px
+		margin: 0 8px
+		padding: 8px 
+		transition: $transition
+		@media (max-width: 767.98px)
+			text-transform: uppercase
+			border: 1px solid $color-gray
+		&.active, &:hover
+			background: $color-gray
+			font-weight: bold 
+			opacity: 1
+
+.footer 
+	padding-top: 30px
+	background: #f9f9fa
+	margin-top: auto
+	color: $color-footer
+	.brand 
+		text-transform: uppercase
+		font-size: 14px
+		font-weight: bold
+	.footer-links
+		a 
+			padding-bottom: 4px
+			color: $color-footer
+			font-size: 13px
+			font-weight: bold
+			display: inline-block
+
+.social 
+	display: inline-block
+	color: $color-footer !important
+	vertical-align: middle
+	margin-right: 14px
+	font-size: 16px !important
+	@media (max-width: 1199.98px)
+		margin-left: 14px
+	&:hover 
+		opacity: .7
+
+.footer-bottom 
+	padding: 15px 0 20px
+	border-top: 1px solid 
+	font-size: 13px
+	font-weight: bold
+	border-top: 1px solid $color-border
+
+@media (min-width: 1200px)
+	.col-xl-news 
+		flex: 0 0 20%
+		max-width: 20%
+
+.img-wrap 
+	overflow: hidden
+	transition: $transition
+	.bg-wrap
+		transition: $transition
+	@media (min-width: 1200px)
+		&:hover
+			.bg-wrap
+				transform: scale(1.1) 
+
+.news
+	text-transform: uppercase
+	color: $color-red
+	font-size: 11px
+	display: block
+	font-weight: bold
+	letter-spacing: 1.5px
+
+.menubar
+	overflow: hidden
+
+.navbar-toggler 
+	.menubar &
+		opacity: 0
+		pointer-events: none
+
+#menu 
+	position: fixed
+	top: 146px
+	right: 0
+	bottom: 0
+	left: 0
+	overflow: auto
+	z-index: 1031
+	padding: 26px 0
+	transition: $transition
+	opacity: 0
+	background: $color-white
+	pointer-events: none
+	.menubar &
+		opacity: 1
+		pointer-events: auto
+	@media (max-width: 1199.98px)
+		top: 65px
+
+.link-name
+	color: $color-red
+	text-transform: uppercase
+	font-weight: bold
+	font-size: 12px
+	margin-bottom: 8px
+
+.links 
+	margin-bottom: 24px
+	a
+		color: $color-black
+		font-family: 'Roboto', sans-serif
+		display: block
+		padding-bottom: 2px
+		&:hover 
+			opacity: .6
+
+.form-control-search
+	border-radius: 0
+	height: 52px
+	text-align: center
+	font-size: 14px
+	text-transform: uppercase
+	color: $color-black
+	font-family: 'Roboto', sans-serif
+	font-weight: 500
+	background: $color-gray
+	border: 0
+	&:focus 
+		box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.1) !important
+	@media (max-width: 767.98px)
+		padding-left: 15px
+		padding-right: 15px
+
+.link-deal
+	display: block
+	border-radius: 8px
+	overflow: hidden
+	margin-bottom: 24px
+	text-align: center
+
+.cart-deal
+	display: block
+	border-radius: 8px
+	overflow: hidden
+	height: 100%
+	display: flex
+	flex-direction: column
+	text-align: center
+	border: 2px solid $color-gray
+	padding-top: 20px
+
