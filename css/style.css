@@ -752,7 +752,7 @@ input[type=radio] {
     border: 1px solid #c6c6c6;
     color: #000; }
   .radio-group-time input:hover ~ div, .radio-group-time input:checked ~ div {
-    background: #c8797d;
+    background: #EDCED0;
     color: #ae2028;
     border-color: #ae2028; }
 
