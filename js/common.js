@@ -47,20 +47,6 @@ $(document).ready(function () {
 
 // CALENDAR
 
-// var start = moment("03/15/2023"),
-//     end   = moment("04/07/2023");
-
-// function cb(start, end) {
-//     $('#reportrange').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'));
-// };
-
-// $('#reportrange').daterangepicker({
-//     startDate: start,
-//     endDate: end,
-// }, cb);
-
-// cb(start, end);
-
 $('input[name="birthday1"]').daterangepicker({
   singleDatePicker: true,
   showDropdowns: true,

@@ -13,8 +13,11 @@ $color-white: #FFF
 $color-border: #ebebeb
 $color-gray: #f2f5f8
 $color-red: #ae2028
+$color-red-2: #c8797d
 $color-footer: #4b4b4b
 $color-h: #303030
+$border-select: #c6c6c6
+$bg-select: #f7f8f9
 
 .georgia 
 	font-family: 'Georgia', sans-serif
@@ -718,29 +721,111 @@ a
 	.date
 		font-size: 30px
 		font-weight: bold 
+		@media (max-width: 575.98px)
+			display: inline-block
 	.month
 		text-transform: uppercase
+		@media (max-width: 575.98px)
+			display: inline-block
+
+.form-control-calendar
+	font-size: 14px
+	color: $color-black
+	border-color: $border-select
+	background: $bg-select
+	border-radius: 5px
+	height: 38px
+	&:focus
+		box-shadow: none
+		border-color: $border-select
 
 input
 	&[type=radio]
 		display: none
 
-.radio-group	
-	font-size: 13px
+.radio-group-time
 	display: block
-	text-align: center
 	cursor: pointer
 	input
 		~ div
-			padding: 8px
-			border-radius: 6px
-			border: 0
+			padding: 8px 12px
+			font-size: 14px
+			transition: $transition
+			border-radius: 100px
+			border: 1px solid $border-select
 			color: $color-black
-			@media (max-width: 767.98px)
-				text-transform: uppercase
-				border: 1px solid $color-gray
 		&:hover, &:checked
 			~ div
-				transition: $transition
-				background: $color-gray
-				font-weight: bold 
+				background: $color-red-2
+				color: $color-red
+				border-color: $color-red
+
+// SELECT2
+
+.select2-container
+	display: block
+	width: auto !important
+	min-width: 45px !important	
+	.select2-selection--single
+		background: $bg-select
+		border: 1px solid $border-select
+		padding: 0px 12px
+		transition: $transition
+		height: 40px
+		.select2-selection__rendered
+			padding-left: 0
+			padding-right: 0
+	.selection
+		display: block
+.select2-container--default .select2-selection--single
+	border-radius: 5px
+	.select2-selection__rendered, .select2-selection__placeholder
+		color: $color-black
+		line-height: 40px
+		font-size: 14px
+	.select2-selection__arrow, .select2-selection__clear
+		display: none
+.select2-container--open 
+	.select2-dropdown
+		border: 1px solid $border-select
+		border-radius: 5px
+		overflow: hidden
+		top: -40px
+		padding: 0
+		z-index: 1039
+		.select2-search--dropdown
+			padding: 0
+			.select2-search__field
+				border: 0
+				border-bottom: 1px solid $border-select
+				color: $color-black
+				border-radius: 5px 5px 0 0
+				padding: 4px 12px
+				height: 40px
+				font-size: 14px
+				background: $color-white
+		.select2-results
+			padding: 4px
+			.select2-results__options
+				max-height: 140px
+				padding-right: 4px
+				&::-webkit-scrollbar
+					width: 4px
+					height: 4px
+				&::-webkit-scrollbar-track
+					background-color: transparent
+					border-radius: 2px
+				&::-webkit-scrollbar-thumb
+					background-color: $border-select
+					border-radius: 2px	
+				.select2-results__option
+					font-size: 13px
+					padding: 4px 6px
+					color: $color-black
+					background-color: transparent
+				.select2-results__option--highlighted.select2-results__option--selectable
+					background: transparent
+					&:hover, &.select2-results__option--selected, &.select2-results__option--highlighted.select2-results__option--selectable
+						background-color: $color-gray
+						border-radius: 5px
+						border: 1px solid $border-select
