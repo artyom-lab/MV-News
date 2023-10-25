@@ -420,7 +420,10 @@ a {
 
 @media (min-width: 1200px) {
   .w-300 {
-    width: 300px; } }
+    width: 300px; }
+
+  .w-200 {
+    width: 200px; } }
 .return {
   font-size: 11px;
   display: inline-block; }
@@ -459,12 +462,6 @@ a {
   background-size: cover;
   background-position: center center;
   height: 100%; }
-  @media (max-width: 1199.98px) {
-    .bg-img {
-      min-height: 184px; } }
-  @media (max-width: 575.98px) {
-    .bg-img {
-      min-height: 110px; } }
 
 .pagination .page-link {
   color: #ae2028;
@@ -551,28 +548,6 @@ a {
     transform-origin: right center;
     border-top: 1px solid #000;
     margin-left: auto; }
-
-input[type=radio] {
-  display: none; }
-
-.radio-group {
-  font-size: 13px;
-  display: block;
-  text-align: center;
-  cursor: pointer; }
-  .radio-group input ~ div {
-    padding: 8px;
-    border-radius: 6px;
-    border: 0;
-    color: #000; }
-    @media (max-width: 767.98px) {
-      .radio-group input ~ div {
-        text-transform: uppercase;
-        border: 1px solid #f2f5f8; } }
-  .radio-group input:hover ~ div, .radio-group input:checked ~ div {
-    transition: 0.3s;
-    background: #f2f5f8;
-    font-weight: bold; }
 
 .tabs-search {
   font-size: 13px;
@@ -730,5 +705,42 @@ input[type=radio] {
   text-align: center;
   border: 2px solid #f2f5f8;
   padding-top: 20px; }
+
+.event-box {
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 24px; }
+  .event-box:not(:first-child) {
+    padding-top: 24px; }
+
+.calendar-box {
+  display: inline-block;
+  text-align: center; }
+  .calendar-box .date {
+    font-size: 30px;
+    font-weight: bold; }
+  .calendar-box .month {
+    text-transform: uppercase; }
+
+input[type=radio] {
+  display: none; }
+
+.radio-group {
+  font-size: 13px;
+  display: block;
+  text-align: center;
+  cursor: pointer; }
+  .radio-group input ~ div {
+    padding: 8px;
+    border-radius: 6px;
+    border: 0;
+    color: #000; }
+    @media (max-width: 767.98px) {
+      .radio-group input ~ div {
+        text-transform: uppercase;
+        border: 1px solid #f2f5f8; } }
+  .radio-group input:hover ~ div, .radio-group input:checked ~ div {
+    transition: 0.3s;
+    background: #f2f5f8;
+    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
