@@ -711,21 +711,32 @@ a {
   padding-bottom: 24px; }
   .event-box:not(:first-child) {
     padding-top: 24px; }
+  @media (max-width: 575.98px) {
+    .event-box h3 {
+      font-size: 16px; } }
 
 .calendar-box {
   display: inline-block;
   text-align: center; }
   .calendar-box .date {
     font-size: 30px;
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: 1; }
     @media (max-width: 575.98px) {
       .calendar-box .date {
-        display: inline-block; } }
+        font-size: 22px; } }
   .calendar-box .month {
     text-transform: uppercase; }
     @media (max-width: 575.98px) {
       .calendar-box .month {
-        display: inline-block; } }
+        font-size: 12px; } }
+
+.location {
+  font-size: 14px;
+  color: #a2a2a2; }
+  @media (max-width: 575.98px) {
+    .location {
+      font-size: 12px; } }
 
 .form-control-calendar {
   font-size: 14px;

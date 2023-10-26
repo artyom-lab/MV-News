@@ -714,6 +714,9 @@ a
 	padding-bottom: 24px
 	&:not(:first-child)
 		padding-top: 24px
+	h3 
+		@media (max-width: 575.98px)
+			font-size: 16px
 
 .calendar-box
 	display: inline-block
@@ -721,12 +724,19 @@ a
 	.date
 		font-size: 30px
 		font-weight: bold 
+		line-height: 1
 		@media (max-width: 575.98px)
-			display: inline-block
+			font-size: 22px
 	.month
 		text-transform: uppercase
 		@media (max-width: 575.98px)
-			display: inline-block
+			font-size: 12px
+
+.location
+	font-size: 14px
+	color: #a2a2a2
+	@media (max-width: 575.98px)
+		font-size: 12px
 
 .form-control-calendar
 	font-size: 14px
