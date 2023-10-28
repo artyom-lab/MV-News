@@ -242,6 +242,15 @@ a {
     border-top: 1px solid #000; }
   .navbar-toggler:hover {
     opacity: 0.8; }
+  .navbar-toggler.active:before {
+    transform: rotate(-45deg);
+    width: 25px; }
+  .navbar-toggler.active span {
+    width: 0;
+    opacity: 0; }
+  .navbar-toggler.active:after {
+    transform: rotate(45deg);
+    width: 25px; }
   .fixed-top .navbar-toggler {
     display: none; }
 

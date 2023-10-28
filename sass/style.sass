@@ -243,6 +243,16 @@ a
 		border-top: 1px solid $color-black
 	&:hover 
 		opacity: .8
+	&.active
+		&:before
+			transform: rotate(-45deg)
+			width: 25px
+		span
+			width: 0
+			opacity: 0
+		&:after
+			transform: rotate(45deg)
+			width: 25px
 	.fixed-top &
 		display: none
 
