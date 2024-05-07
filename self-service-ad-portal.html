@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mount Vernon News</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="self-navbar">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6 text-center">
+          <a href="#!">
+            <img class="img-fluid" src="img/brand.png" alt="" width="175">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="card-step">
+
+    <div class="step step-1">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="mb-3">Self Service Ad Portal</h1>
+          <p class="fz-13 mb-4">Select your ad type. Clasifieds & Legal Notices will appear in both print and digital at no extra cost.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-10 col-sm-6 col-lg-3 mb-5 d-flex flex-column">
+            <div class="img-wrap type-box">
+              <div class="bg-img bg-wrap ratio ratio-4x3" style="background-image: url(img/image1.jpg)">
+              </div>
+            </div>
+            <h3 class="fz-20 font-weight-bold mb-3">Digital Display</h3>
+            <div class="fz-14 pb-2">Digital Display includes standard IAB sizes. Buys include both desktop and mobile creatives.</div>
+            <button class="btn btn-contact btn-black btn-select btn-block mt-4">Select Digital Display</button>
+          </div>
+          <div class="col-10 col-sm-6 col-lg-3 mb-5 d-flex flex-column">
+            <div class="img-wrap type-box">
+              <div class="bg-img bg-wrap ratio ratio-4x3" style="background-image: url(img/image2.jpg)">
+              </div>
+            </div>
+            <h3 class="fz-20 font-weight-bold mb-3">Print Display</h3>
+            <div class="fz-14 pb-2">Print ads will run in the weekly print edition. Choose from 4 size options to fit your needs.</div>
+            <button class="btn btn-contact btn-black btn-select btn-block mt-auto">Select Print Display</button>
+          </div>
+          <div class="col-10 col-sm-6 col-lg-3 mb-5 d-flex flex-column">
+            <div class="img-wrap type-box">
+              <div class="bg-img bg-wrap ratio ratio-4x3" style="background-image: url(img/image3.jpg)">
+              </div>
+            </div>
+            <h3 class="fz-20 font-weight-bold mb-3">Classified</h3>
+            <div class="fz-14 pb-2">Classifieds are text only. A digital version will be posted to the website at no additional fee.</div>
+            <button class="btn btn-contact btn-black btn-select btn-block mt-auto">Select Classifieds</button>
+          </div>
+          <div class="col-10 col-sm-6 col-lg-3 mb-5 d-flex flex-column">
+            <div class="img-wrap type-box">
+              <div class="bg-img bg-wrap ratio ratio-4x3" style="background-image: url(img/image4.jpg)">
+              </div>
+            </div>
+            <h3 class="fz-20 font-weight-bold mb-3">Legal Noticw</h3>
+            <div class="fz-14 pb-2">Legal Notices are text only. A digital version will be posted to the website at no additional fee.</div>
+            <button class="btn btn-contact btn-black btn-select btn-block mt-auto">Select Legal Notice</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step step-2">
+      <div class="container container-portal">
+        <div class="row row-24 flex-grow-1">
+          <div class="col-lg-7 py-4 border-vertical">
+            <div class="text-center mb-3">
+              <h1 class="mb-3">Self Service Ad Portal</h1>
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active">Ad Type</li>
+                    <li class="breadcrumb-item active">Ad Information</li>
+                    <li class="breadcrumb-item">Business</li>
+                    <li class="breadcrumb-item">Payment</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <h5>Ad Copy</h5>
+              <p class="fz-14 mb-2">Tell us about your Legal Notice. Pricing is based on length of the notice. Pricing can be found on the left.</p>
+              <div class="form-group">
+                <textarea class="form-control textarea-portal" placeholder="Enter the Legal Notice Copy" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="mb-2">
+              <h5>Run Date</h5>
+              <p class="fz-14 mb-2">Choose an edition to run the Legal Notice in. Print editions run every Saturday. Submissions must be remitted by no later than Friday at noon EST to make the editions print run.</p>
+              <div class="form-group">
+                <input type="text" class="form-control input-portal" placeholder="Choose an edition">
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-sm">
+                <a href="#!" class="a-return" id="step-back-2">
+                  <img src="img/arrow-left.svg" alt="" class="align-middle">
+                  <span class="align-middle">Return to Ad Type Selection</span>
+                </a>
+              </div>
+              <div class="col-sm-6 mt-3 mt-sm-0">
+                <button class="btn btn-contact btn-black btn-block" id="btnto-step-3">Continue to Personal Information</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 py-4">
+            <div class="py-2">
+              <h5>Legal Notice Pricing</h5>
+              <p class="fz-14 mb-2">Pricing is based on the number of characters. A Legal Notice must have a minimum of 100 characters and no more than 300. Pricing is based on each edition the Legal Notice runs.</p>
+            </div>
+            <ul class="ul-characters">
+              <li>
+                <div class="row">
+                  <div class="col">Less than 149 characters</div>
+                  <div class="col-auto"><span class="price">$5.00</span></div>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <div class="col">Between 150 - 224 characters</div>
+                  <div class="col-auto"><span class="price">$10.00</span></div>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <div class="col">Between 225 - 300 characters</div>
+                  <div class="col-auto"><span class="price">$15.00</span></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step step-3">
+      <div class="container container-portal">
+        <div class="row row-24 flex-grow-1">
+          <div class="col-lg-7 py-4 border-vertical">
+            <div class="text-center mb-3">
+              <h1 class="mb-3">Self Service Ad Portal</h1>
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active">Ad Type</li>
+                    <li class="breadcrumb-item active">Ad Information</li>
+                    <li class="breadcrumb-item active">Business</li>
+                    <li class="breadcrumb-item">Payment</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <h3 class="mb-3">Business Information</h3>
+              <div class="form-group">
+                <input type="text" class="form-control input-portal" placeholder="First Name*">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control input-portal" placeholder="Last Name*">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control input-portal" placeholder="Phone*">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control input-portal" placeholder="Email*">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control input-portal" placeholder="Company Name*">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control input-portal" placeholder="Company Address*">
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-sm">
+                <a href="#!" class="a-return" id="step-back-3">
+                  <img src="img/arrow-left.svg" alt="" class="align-middle">
+                  <span class="align-middle">Return to Ad Selection</span>
+                </a>
+              </div>
+              <div class="col-sm-6 mt-3 mt-sm-0">
+                <button class="btn btn-contact btn-black btn-block" id="btnto-step-4">Continue to Payment</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 py-4">
+            <div class="row row-1 mt-2 mb-4">
+              <div class="col-auto">
+                <div class="box-newspaper">
+                  <img src="img/newspaper.jpg" alt="" width="80"> 
+                </div>
+              </div>
+              <div class="col mt-1">
+                <h5 class="d-flex mb-0">Legal Notice <span class="ms-auto price-big">$17.50</span></h5>
+                <div class="gray fz-12">
+                  <div>247 characters</div>
+                  <div>Saturdat, April 27, 2024</div>
+                </div>
+              </div>
+            </div>
+            <div class="notice-box">
+              <div class="d-flex mb-2">Subtotal <span class="ms-auto">$17.50</span></div>
+              <div class="d-flex">Tax <span class="ms-auto fz-12">Calculated at payment</span></div>
+            </div>
+            <div class="notice-box">
+              <div class="d-flex">Total <span class="ms-auto price-big">$17.50</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step step-4">
+      <div class="container container-portal">
+        <div class="row row-24 flex-grow-1">
+          <div class="col-lg-7 py-4 border-vertical">
+            <div class="text-center mb-3">
+              <h1 class="mb-3">Self Service Ad Portal</h1>
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active">Ad Type</li>
+                    <li class="breadcrumb-item active">Ad Information</li>
+                    <li class="breadcrumb-item active">Business</li>
+                    <li class="breadcrumb-item active">Payment</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="express-checkout mb-4">
+              <div class="title">Express Checkout</div>
+              <div class="row row-1">
+                <div class="col">
+                  <button class="btn btn-pay btn-paypal btn-block"><img src="img/paypal.png" alt="" width="68"></button>
+                </div>
+                <div class="col">
+                  <button class="btn btn-pay btn-google btn-block"><img src="img/googlepay.png" alt="" width="45"></button>
+                </div>
+                <div class="col">
+                  <button class="btn btn-pay btn-apple btn-block"><img src="img/applepay.png" alt="" width="45"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="or mb-3">
+              <span>Or Enter Credit Card Information Below</span>
+            </div>
+
+            <form class="form-payment" id="form" novalidate>
+              <div class="mb-4">
+                <h3 class="mb-3">Payment Information</h3>
+                <div class="form-group">
+                  <input type="text" class="form-control input-portal" placeholder="Name on Card" name="name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control input-portal" placeholder="Address" name="address">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control input-portal" placeholder="Apartment, Suite, etc (optional)">
+                </div>
+                <div class="form-group">
+                  <div class="row row-5">
+                    <div class="col">
+                      <input type="text" class="form-control input-portal" placeholder="City" name="city">
+                    </div>
+                    <div class="col">
+                      <select class="form-select select-state">
+                        <option selected="">State</option>
+                          <option value="1">Alaska</option>
+                          <option value="2">Alabama</option>
+                          <option value="3">Arkansas</option>
+                          <option value="4">Arizona</option>
+                          <option value="5">California</option>
+                          <option value="6">Colorado</option>
+                          <option value="7">Connecticut</option>
+                          <option value="8">Delaware</option>
+                          <option value="9">Florida</option>
+                          <option value="10">Georgia</option>
+                          <option value="11">Hawaii</option>
+                          <option value="12">Iowa</option>
+                          <option value="13">Idaho</option>
+                          <option value="14">Illinois</option>
+                          <option value="15">Indiana</option>
+                          <option value="16">Kansas</option>
+                          <option value="17">Kentucky</option>
+                          <option value="18">Louisiana</option>
+                          <option value="19">Massachusetts</option>
+                          <option value="20">Maryland</option>
+                          <option value="21">Maine</option>
+                          <option value="22">Michigan</option>
+                          <option value="23">Minnesota</option>
+                          <option value="24">Missouri</option>
+                          <option value="25">Mississippi</option>
+                          <option value="26">Montana</option>
+                          <option value="27">North Carolina</option>
+                          <option value="28">North Dakota</option>
+                          <option value="29">Nebraska</option>
+                          <option value="30">New Hampshire</option>
+                          <option value="31">New Jersey</option>
+                          <option value="32">New Mexico</option>
+                          <option value="33">Nevada</option>
+                          <option value="34">New York</option>
+                          <option value="35">Ohio</option>
+                          <option value="36">Oklahoma</option>
+                          <option value="37">Oregon</option>
+                          <option value="38">Pennsylvania</option>
+                          <option value="39">Rhode Island</option>
+                          <option value="40">South Carolina</option>
+                          <option value="41">South Dakota</option>
+                          <option value="42">Tennessee</option>
+                          <option value="43">Texas</option>
+                          <option value="44">Utah</option>
+                          <option value="45">Virginia</option>
+                          <option value="46">Vermout</option>
+                          <option value="47">Washington</option>
+                          <option value="48">Washington DC</option>
+                          <option value="49">Wisconsin</option>
+                          <option value="50">West Virginia</option>
+                          <option value="51">Wyoming</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <input type="number" class="form-control input-portal" placeholder="Zip" name="zip">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="number" class="form-control input-portal input-mastercard" placeholder="Card Number" name="card">
+                </div>
+                <div class="form-group">
+                  <div class="row row-5">
+                    <div class="col">
+                      <input type="text" class="form-control input-portal" placeholder="Expiration (MM/YY)" name="exp">
+                    </div>
+                    <div class="col">
+                      <input type="number" class="form-control input-portal" placeholder="Security" name="sec">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center mb-4">
+                <div class="col-sm">
+                  <a href="#!" class="a-return" id="step-back-4">
+                    <img src="img/arrow-left.svg" alt="" class="align-middle">
+                    <span class="align-middle">Return to Business Information</span>
+                  </a>
+                </div>
+                <div class="col-sm-6 mt-3 mt-sm-0">
+                  <button class="btn btn-contact btn-black btn-block">Complete Payment</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-5 py-4">
+            <div class="row row-1 mt-2 mb-4">
+              <div class="col-auto">
+                <div class="box-newspaper">
+                  <img src="img/newspaper.jpg" alt="" width="80"> 
+                </div>
+              </div>
+              <div class="col mt-1">
+                <h5 class="d-flex mb-0">Legal Notice <span class="ms-auto price-big">$17.50</span></h5>
+                <div class="gray fz-12">
+                  <div>247 characters</div>
+                  <div>Saturdat, April 27, 2024</div>
+                </div>
+              </div>
+            </div>
+            <div class="notice-box">
+              <div class="d-flex mb-2">Subtotal <span class="ms-auto">$17.50</span></div>
+              <div class="d-flex">Tax <span class="ms-auto fz-12">Calculated at payment</span></div>
+            </div>
+            <div class="notice-box">
+              <div class="d-flex">Total <span class="ms-auto price-big">$17.50</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
+

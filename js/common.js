@@ -28,6 +28,86 @@ $(document).ready(function () {
 	navbar();
 	$(window).on("scroll", navbar);
 
+// STEPS
+
+  $('.btn-select').on('click', function() {
+    $('.card-step').addClass('step-2-active');
+  });
+  $("#btnto-step-3").on("click", function(){
+    $(".card-step").addClass("step-3-active");
+  });
+  $("#btnto-step-4").on("click", function(){
+    $(".card-step").addClass("step-4-active");
+  });
+
+  $("#step-back-2").on("click", function(){
+    $(".card-step").removeClass("step-2-active");
+  });
+  $("#step-back-3").on("click", function(){
+    $(".card-step").removeClass("step-3-active");
+  });
+  $("#step-back-4").on("click", function(){
+    $(".card-step").removeClass("step-4-active");
+  });
+
+  // STEPS END
+
+  $('#form').validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 5,
+      },
+      address: {
+        required: true,
+        minlength: 5
+      },
+      city: {
+        required: true,
+        minlength: 2
+      },
+      zip: {
+        required: true,
+        minlength: 5
+      },
+      card: {
+        required: true,
+        minlength: 16
+      },
+      exp: {
+        required: true,
+        minlength: 4
+      },
+      sec: {
+        required: true,
+        minlength: 3
+      }
+    },
+    messages: {
+      name: {
+        required: "Invalid Name",
+      },
+      address: {
+        required: "Invalid Address",
+      },
+      city: {
+        required: "Invalid City",
+      },
+      zip: {
+        required: "Invalid Zip",
+      },
+      card: {
+        required: "Invalid Card Number",
+      },
+      exp: {
+        required: "Invalid Expiration Date",
+      },
+      sec: {
+        required: "Invalid Security Code",
+      }
+    },
+  });
+
   $('.owl-1').owlCarousel({
     center: true,
     items: 1,
@@ -39,10 +119,6 @@ $(document).ready(function () {
         items: 4
       }
     }
-  });
-
-  $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) { 
-    e.stopPropagation();
   });
 
 // CALENDAR
